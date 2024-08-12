@@ -1,0 +1,25 @@
+.word{ 
+    position: relative
+}
+
+.caret {
+    width: 1px;
+    height: 1em;
+    border-left: 2px solid #ffffff; /* Blue color for the caret */
+    animation: blink 0.4s ease infinite;
+
+    position:absolute;
+  
+  }
+
+
+
+  @keyframes blink {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #ffffff;
+    }
+  }

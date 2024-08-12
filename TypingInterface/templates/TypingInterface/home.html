@@ -1,0 +1,91 @@
+{% extends "TypingInterface/base/base.html" %}
+
+<!-- Home -->
+
+{% block content %}
+
+<link rel="stylesheet" href="/static/style.css" />
+<div class="min-h-screen w-full bg-white dark:bg-black">
+  <div class="h-screen w-full flex flex-col items-center justify-center gap-2">
+    <div class="w-[90%] h-12 mb-8 flex items-center">
+      <span class="flex items-center w-full gap-6">
+        <div id="timer" class="font-mono text-xl text-white">00:00</div>
+        <div class="flex gap-2">
+          <svg
+            class="w-6 h-6"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            stroke="#ffffff"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
+                stroke="#ffffff"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <path
+                d="M12 6V12"
+                stroke="#ffffff"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <path
+                d="M16.24 16.24L12 12"
+                stroke="#ffffff"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </g>
+          </svg>
+
+          <svg
+            class="w-6 h-6"
+            fill="#ffffff"
+            viewBox="0 0 1024 1024"
+            xmlns="http://www.w3.org/2000/svg"
+            stroke="#ffffff"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                d="M829.44 911.36c45.245 0 81.92-36.675 81.92-81.92V194.56c0-45.245-36.675-81.92-81.92-81.92H194.56c-45.245 0-81.92 36.675-81.92 81.92v634.88c0 45.245 36.675 81.92 81.92 81.92h634.88zm0 40.96H194.56c-67.866 0-122.88-55.014-122.88-122.88V194.56c0-67.866 55.014-122.88 122.88-122.88h634.88c67.866 0 122.88 55.014 122.88 122.88v634.88c0 67.866-55.014 122.88-122.88 122.88z"
+              ></path>
+              <path
+                d="M322.684 797.914L528.15 228.201c3.837-10.64-1.677-22.376-12.317-26.213s-22.376 1.677-26.213 12.317L284.154 784.018c-3.837 10.64 1.677 22.376 12.317 26.213s22.376-1.677 26.213-12.317z"
+              ></path>
+              <path
+                d="M739.848 784.018L534.382 214.305c-3.837-10.64-15.573-16.155-26.213-12.317s-16.155 15.573-12.317 26.213l205.466 569.713c3.837 10.64 15.573 16.155 26.213 12.317s16.155-15.573 12.317-26.213z"
+              ></path>
+              <path
+                d="M375.165 612.512h274.36c11.311 0 20.48-9.169 20.48-20.48s-9.169-20.48-20.48-20.48h-274.36c-11.311 0-20.48 9.169-20.48 20.48s9.169 20.48 20.48 20.48z"
+              ></path>
+            </g>
+          </svg>
+        </div>
+      </span>
+    </div>
+    <div
+      class="main w-[90%] h-[20%] overflow-hidden flex flex-wrap gap-3"
+    ></div>
+  </div>
+</div>
+
+<script type="module" src="/static/keyboard.js"></script>
+
+{% endblock content %}
